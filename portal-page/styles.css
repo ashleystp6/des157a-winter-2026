@@ -9,53 +9,11 @@
     padding-left: 30px;
     margin: auto;
     gap: 200px;
-    
-    h1, h2 {
-        color: white;
-    }
 }
 
-/* .falling1 {
-    position: absolute;
-    left: 20%;
-    transform: translateX(-50%);
-    animation: fall 5s linear infinite;
+h1, h2 {
+    color: white;
 }
-
-.falling2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: fall 5s linear infinite;
-}
-
-.falling3 {
-    position: absolute;
-    left: 90%;
-    transform: translateX(-50%);
-    animation: fall 5s linear infinite;
-}
-
-.falling4 {
-    position: absolute;
-    left: 10%;
-    transform: translateX(-50%);
-    animation: fall 5s linear infinite;
-}
-
-.falling5 {
-    position: absolute;
-    left: 35%;
-    transform: translateX(-50%);
-    animation: fall 5s linear infinite;
-}
-
-.falling6 {
-    position: absolute;
-    left: 70%;
-    transform: translateX(-50%);
-    animation: fall 5s linear infinite;
-} */
 
   .falling {
     position: absolute;
@@ -126,20 +84,77 @@ main {
     margin: auto;
 }
 
-#minisnowflake {
+#minisnowflake1 {
     display: flex;
     gap: 5px;
-
-    img {
-        padding: 22px;
-    }
-    
-    img:hover {
-        transform: rotate(360deg);
-        transition: all 5s ease-out;
-    }
 }
 
+#minisnowflake1 h2 {
+    color: #470034;
+}
+
+#minisnowflake1 img {
+    padding: 22px;
+}
+
+#minisnowflake1 img:hover {
+    transform: rotate(360deg);
+    transition: all 5s ease-out;
+}
+
+#minisnowflake2 {
+    display: flex;
+    gap: 5px;
+}
+
+#minisnowflake2 h2 {
+    color: #470034;
+}
+
+#minisnowflake2 img {
+    padding: 22px;
+}
+
+#minisnowflake2 img:hover {
+    transform: rotate(360deg);
+    transition: all 5s ease-out;
+}
+
+#minisnowflake3 {
+    display: flex;
+    gap: 5px;
+}
+
+#minisnowflake3 h2 {
+    color: #470034;
+}
+
+#minisnowflake3 img {
+    padding: 22px;
+}
+
+#minisnowflake3 img:hover {
+    transform: rotate(360deg);
+    transition: all 5s ease-out;
+}
+
+#minisnowflake4 {
+    display: flex;
+    gap: 5px;
+}
+
+#minisnowflake4 h2 {
+    color: #470034;
+}
+
+#minisnowflake4 img {
+    padding: 22px;
+}
+
+#minisnowflake4 img:hover {
+    transform: rotate(360deg);
+    transition: all 5s ease-out;
+}
 
 .research {
     border: 5px solid #470034;
@@ -203,8 +218,9 @@ footer {
     gap: 60px;
     padding: 10px;
     max-width: 1100px;
-    margin: auto;
-    a {
-        color: white;
-    }
+    margin: auto; 
+}
+
+footer a {
+    color: white;
 }
