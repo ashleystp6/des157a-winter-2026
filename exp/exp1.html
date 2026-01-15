@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp1</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>open the console to see the code</h2>
+    <script>
+        //sequence
+        var text = prompt('type something', '').toLowerCase();
+        var finalText = '';
+        //loop 
+        for (var i=0; i<text.length; i++){
+            //selection
+            if (i%2==0){
+                finalText += text[i].toUpperCase();
+
+            } else {
+                finalText += text[i];
+            }
+        }
+        console.log(finalText);
+
+    </script>
+</body>
+</html>
