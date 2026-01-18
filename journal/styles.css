@@ -8,7 +8,6 @@
     padding-top: 100px;
     padding-left: 30px;
     margin: auto;
-    gap: 275px;
 }
 
 h1, h2 {
@@ -79,7 +78,7 @@ p {
 
 main {
     background: #fcf2ff;
-    background: linear-gradient(180deg, rgba(252, 242, 255, 1) 0%, rgba(190, 85, 185, 1) 100%);
+    background: linear-gradient(180deg, rgba(252, 242, 255, 1) 0%, rgb(243, 169, 239) 100%);
     max-width: 1100px;
     margin: auto;
 }
