@@ -210,6 +210,10 @@ li a {
     margin: 5px;
 }
 
+li, a:hover {
+    color: #0f7ebe;
+}
+
 footer {
     background-color: #470034;
     display: flex;
