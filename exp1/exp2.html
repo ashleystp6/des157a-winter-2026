@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        main {
+            height: 100vh;
+        }
+        h1, p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Experiment 2</h1>
+    <p></p>
+    </main>
+    <script> //change background color on page
+        var choosecolor = prompt('choose a color!', '').toLowerCase();
+        var colors =  ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+        function pagecolor(){
+            console.log(`you chose ${choosecolor}`);
+            console.log(choosecolor)
+            // if (choosecolor == 'red'){
+                
+            //     document.querySelector('main').style.backgroundColor = 'red';
+            // } 
+            var mycolor;
+            for (var eachcolor of colors){
+                if (eachcolor == choosecolor) {
+                    mycolor = choosecolor;
+                }
+            } 
+            document.querySelector('main').style.backgroundColor = mycolor;
+            document.querySelector('p').innerHTML = `you chose ${mycolor}`;
+        }
+        
+        console.log( pagecolor() );
+
+    </script>
+    
+</body>
+</html>

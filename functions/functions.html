@@ -14,7 +14,64 @@
             console.log(myString);
             console.log(upperString);
         }
-        doStuff();
+        window.doStuff();
+
+        function checkNum(){
+        if (number < 10) {
+            console.log('you entered a number smaller than 10');
+            for( var i=0; i<10; i++) {
+                console.log(`here is a ${i}`);
+            }
+        } else if (number > 9) {
+            console.log('you typed a big number');
+        } else {
+            console.log('error you didnt enter a number');
+        }
+    }
+
+    function upperMessage(message){
+        var upper = message.toUpperCase();
+        console.log(message);
+        console.log(upper);
+    }
+
+    // upperMessage('booger picking stinknose');
+
+    function addNums(num1, num2){
+        if(typeof(num1) == number)
+        var sume = num1 + num2;
+        console.log(sum);
+    }
+    // addNums(4, 3);
+
+    function returnSum(num1, num2){
+        var sum = num1 + num2;
+        return sum;
+    }
+    // console.log(returnSum(4,5));
+
+    //console.log(Math.random());
+
+    function randomInt(min, max){
+        var numOfValues = max - min + 1;
+        var randomNum = Math.random();
+        var randomVal = randomNum * numOfValues;
+        var roundedRandomVal = Math.floor(randomVal);
+        var finalNum = min + roundedRandomVal;
+        // console.log(finalNum);
+        return finalNum;
+    }
+    //randomeInt(5, 10);
+    var food = ['cheese', 'fruit', 'chicken', 'pie'];
+    //console.log(food[randomInt(0,3)]);
+
+    var greeting = function(){
+        var name = prompt("please tell me your name", "");
+        console.log(`hello ${name}, how are you today`);
+    }
+
+    greeting();
+
     </script>
 </body>
 </html>
