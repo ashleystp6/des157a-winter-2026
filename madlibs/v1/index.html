@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs V1</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Poppins&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="fallingfood">
+            <img src="images/cheese.png" alt="cheese" class="falling">
+            <img src="images/mushroom.png" alt="mushroom" class="falling">
+            <img src="images/pepper.png" alt="pepper" class="falling">
+            <img src="images/pepperoni.png" alt="pepperoni" class="falling">
+            <img src="images/tomato.png" alt="tomato"  class="falling">
+    </div>
+    <!-- <img src="images/wood-texture2.png" alt="wood"> -->
+    <main>
+        <header>
+            <h1>Build A Pizza!</h1>
+        </header>
+        <div id="container">
+            <div id='pan'><img src="images/pan.png" width="500" height="640" alt="pan"></div>
+            <div id="dog"><img src="images/dog.png" width='700' height='850' alt='dog'></div>
+            <form>
+                <label for='action'>Choose an action ending in -ing</label><input type="text" id="action">
+
+                <label for='shape'>Choose a shape</label><input type="text" id="shape">
+
+                <label for='sauce'>Choose a type of sauce</label>
+                <select name="sauce" id="sauce">
+                    <option value="tomato">Tomato</option>
+                    <option value="pesto">Pesto</option>
+                    <option value="alfredo">Alfredo</option>
+                </select>
+
+                <label for='cheese'>Choose a type of cheese</label>
+                <select name="cheese" id="cheese">
+                    <option value="mozzerella">Mozzerella</option>
+                    <option value="cheddar">Cheddar</option>
+                    <option value="parmesan">Parmesan</option>
+                </select>
+
+                <label for='topping1'>Choose a topping</label>
+                <select name="topping1" id="topping1">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="sausage">Sausage</option>
+                    <option value="onion">Onion</option>
+                    <option value="pepper">Bell Pepper</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="pineapple">Pineapple</option>
+                </select>
+
+                <label for='topping2'>Choose a topping</label>
+                <select name="topping2" id="topping2">
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="sausage">Sausage</option>
+                    <option value="onion">Onion</option>
+                    <option value="pepper">Bell Pepper</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="pineapple">Pineapple</option>
+                </select>
+
+                <label for='finisher'>Choose a finisher topping/sauce</label>
+                <select name="finisher" id="finisher">
+                    <option value="ranch">Ranch</option>
+                    <option value="bbq">BBQ Sauce</option>
+                    <option value="pesto">Pesto</option>
+                    <option value="arugula">Arugula</option>
+                </select>
+
+                <input type="submit" id="submit">
+            </form>
+        </div>
+
+        <!-- <p>First we will start by (action___) out the pizza dough into a (shape___). Next, you chose (sauce___) sauce so let's spread it out. Let’s sprinkle on a good amount of (cheese___) cheese to cover the sauce. You chose some interesting toppings! Let’s add (topping 1___) and (topping 2___) to the pizza. Now we can bake it until the cheese melts and the crust is crispy. We can finish it off with some (finisher topping/sauce___) and serve it. Yay!</p> -->
+    </main>
+
+</body>
+</html>
