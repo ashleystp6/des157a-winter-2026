@@ -1,0 +1,148 @@
+header {
+    max-width: 1100px;
+    max-height: 500px;
+    background: rgb(235, 203, 162); 
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 400px;
+    background-image: url(images/wood-texture2.png); 
+    background-blend-mode: overlay;
+}
+
+body {
+    background: rgb(235, 203, 162);
+    background-image: url(images/wood-texture2.png); 
+    background-blend-mode: overlay;
+}
+
+#madlib {
+    max-width: 500px;
+    margin-left: 600px;
+    line-height: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#pan {
+    margin-left: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+#dog {
+    margin-left: 600px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+#container {
+    position: relative;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+  font-family: "Akaya Kanadaka", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 50px;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 170px;
+    margin-top: 2px;
+    position: absolute;
+    z-index: 2;
+}
+
+input {
+    max-width: 200px;
+    background-color: rgb(191, 243, 255);
+}
+
+select {
+    max-width: 200px;
+    background-color: rgb(191, 243, 255);
+}
+
+#submit {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background: rgb(139, 214, 143);
+    border-radius: 20px;
+    border-color: rgb(26, 78, 26);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#submit:hover {
+    background: rgb(27, 104, 27);
+}
+
+.falling {
+    position: absolute;
+    top: -100px;
+    width: 70px;
+    animation: fall linear infinite;
+}
+  
+.falling:nth-child(1) {
+    left: 20%;
+    animation-duration: 3s;
+}
+  
+.falling:nth-child(2) {
+    left: 50%;
+    animation-duration: 3s;
+}
+  
+.falling:nth-child(3) {
+    left: 80%;
+    animation-duration: 4s;
+}
+
+.falling:nth-child(4) {
+    left: 10%;
+    animation-duration: 4s;
+}
+  
+.falling:nth-child(5) {
+    left: 35%;
+    animation-duration: 5s;
+}
+
+  
+@keyframes fall {
+    from {
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(100vh);
+    }
+}
+
+.falling {
+    z-index: 2;
+}
