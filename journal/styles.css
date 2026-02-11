@@ -19,6 +19,7 @@ h1, h2 {
     top: -100px;
     width: 70px;
     animation: fall linear infinite;
+    z-index: 1;
   }
   
   .falling:nth-child(1) {
@@ -185,6 +186,10 @@ article {
 
 article p {
     color: #470034;
+}
+
+img {
+    padding-left: 25px;
 }
 
 footer {
