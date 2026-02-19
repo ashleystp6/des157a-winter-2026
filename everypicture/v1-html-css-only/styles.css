@@ -1,0 +1,73 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 20px;
+}
+
+h3, p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(128, 210, 245);
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  margin-top: 30px;
+}
+
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.image-overlay {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  flex: 0 0 auto;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay:hover .overlay {
+  opacity: 1;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
