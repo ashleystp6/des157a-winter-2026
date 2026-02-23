@@ -2,6 +2,8 @@
   'use strict';
   console.log('reading js')
 
+
+  //making the pause/play button
   const track = document.getElementById("carouselTrack");
   const button = document.getElementById("toggleBtn");
 
@@ -19,6 +21,7 @@
     isPlaying = !isPlaying;
   });
 
+  // makes hovering over image pause the carousel (not working correctly)
   const trackhover = document.querySelector('#carouselTrack');
 
   trackhover.addEventListener('hover', function(){
