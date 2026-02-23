@@ -17,6 +17,10 @@ body {
     background-color: rgb(128, 210, 245);
 }
 
+header {
+  border-bottom: dashed rgb(173, 47, 104) 5px;
+}
+
 button {
   width: 80px;
   height: 50px;
@@ -31,20 +35,16 @@ button {
   border-color: rgb(255, 111, 168);
 }
 
-.carousel {
-  overflow: hidden;
-  width: 100%;
-}
 
 .carousel-track {
   display: flex;
-  animation: scroll 20s linear infinite;
+  animation: scroll 10s linear infinite;
   margin-top: 30px;
 }
 
-/* .carousel:hover .carousel-track {
+.carousel:hover .carousel-track {
   animation-play-state: paused;
-} */
+}
 
 .image-overlay {
   position: relative;
@@ -76,12 +76,17 @@ button {
   transition: opacity 0.3s ease;
 }
 
+.overlay p {
+  margin: 20px;
+  line-height: 2em;
+}
+
 .image-overlay:hover .overlay {
   opacity: 1;
 }
 
 @keyframes scroll {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  to { transform: translateX(-100%); }
 }
 
