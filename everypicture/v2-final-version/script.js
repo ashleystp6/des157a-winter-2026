@@ -24,15 +24,17 @@
   // makes hovering over image pause the carousel (not working correctly)
   const trackhover = document.querySelector('#carouselTrack');
 
-  trackhover.addEventListener('hover', function(){
-    alert('hover');
+  document.querySelector('.carousel').addEventListener('mouseover', function(){
+    console.log('hovering');
+    document.querySelector('#carouselTrack').removeAttribute('style');
+    /* alert('hover');
     if (isPlaying) {
       track.style.animationPlayState = "paused";
     } else {
       track.style.animationPlayState = "running";
     }
 
-    isPlaying = !isPlaying;
+    isPlaying = !isPlaying; */
   });
 
 })();
