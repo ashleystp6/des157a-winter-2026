@@ -172,6 +172,28 @@ main {
     transition: all 5s ease-out;
 }
 
+#minisnowflake5 {
+    display: flex;
+    gap: 20px;
+}
+
+#minisnowflake5 h2, h3 {
+    color: #470034;
+}
+
+#minisnowflake5 h3 {
+    margin-top: 22px;
+}
+
+#minisnowflake5 img {
+    padding: 22px;
+}
+
+#minisnowflake5 img:hover {
+    transform: rotate(360deg);
+    transition: all 5s ease-out;
+}
+
 article {
     border: 5px solid #470034;
     border-radius: 20px;
