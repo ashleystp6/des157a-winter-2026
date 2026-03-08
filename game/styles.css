@@ -1,0 +1,82 @@
+body {
+    max-width: 1500px;
+    background: url(images/water.jpg);
+}
+
+main {
+   font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#rules {
+    margin-left: 50px;
+    line-height: 1.5em;
+    background-color: rgba(255, 255, 255, 0.535);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#rules img {
+    margin-left: 30px;
+    margin-top: 20px;
+    position: absolute;
+    animation: slide 2s linear infinite alternate;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+ul {
+   list-style-type: none;
+}
+
+#button {
+    margin-left: 71%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: rgb(39, 210, 225);
+}
+
+#score {
+    display: flex;
+    gap: 80px;
+    margin-left: 68%;
+}
+
+#names {
+    display: flex;
+    gap: 80px;
+    margin-left: 68%;
+}
+
+#dice {
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+#top {
+    display: flex;
+}
+
