@@ -55,14 +55,14 @@
 
             gameData.index ? (gameData.index = 0) : (gameData.index = 1); //switches player
 
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 3000);
 
         } else if(gameData.roll1 === 1 || gameData.roll2 === 1){
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             
-            game.innerHTML += `<p>Sorry, one of your rolls was bad, switching to ${gameData.players[gameData.index]}</p>`;
+            game.innerHTML += `<p>Sorry, one of your rolls was a shark, switching to ${gameData.players[gameData.index]}</p>`;
 
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 3000);
         } else{
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
             actionArea.innerHTML = '<button id="rollagain">Roll again</button> or <button id="pass">Pass</button>';
@@ -84,7 +84,7 @@
         if(gameData.score[gameData.index] > gameData.gameEnd){
             score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points</h2>`;
             actionArea.innerHTML = '';
-            document.querySelector('quit').innerHTML = 'start a new game?';
+            document.querySelector('#quit').innerHTML = 'start a new game?';
         } else {
             //show current score
             showCurrentScore();
@@ -94,6 +94,22 @@
     function showCurrentScore(){
         score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]}</strong>: <strong>${gameData.score[0]}</strong> and <strong>${gameData.players[1]}</strong>: <strong>${gameData.score[1]}</strong></p>`;
     }
+
+    //sound
+
+    const startmusic = document.querySelector('#startgame');
+    const music1 = new Audio('audio/Drunken Sailor - Cooper Cannell.mp3');
+ 
+    startmusic.addEventListener('mousedown', function(){
+        music1.play();
+    });
+
+
+    // const effectmusic = document.querySelector('shark.jpg');
+    // const music2 = new Audio('audio/Monster Alien Grunt Hiss.mp3');
+
+   
     
+
 
 })();
