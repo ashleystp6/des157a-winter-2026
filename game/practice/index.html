@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On V1</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rye&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <h1>Arggg you ready pirates?</h1>
+
+    <div id="rules">
+        <h2>Rules:</h2>
+        <p>
+        Roll the dice and see what images you get. You need a score of 30 to win! <br>
+        Shark = 1pt, Canon = 2pts, Sword = 3pts, Gold = 4pts, Jewel = 5pts, Treasure = 6pts! <br>
+        If you roll a shark the game switches to the other player. Rolling 2 sharks zeros out the score!
+        </p>
+    </div>
+
+    <div id="gamecontrol">
+        <button id="startgame">Start!</button>
+    </div>
+
+    <div id="game"></div>
+    <div id="actions"></div>
+    <div id="score"></div>
+
+    <img id=ship src="images/ship2.jpg" height="300" width="300" alt="ship">
+
+</body>
+</html>

@@ -48,7 +48,6 @@ ul {
 }
 
 #button {
-    margin-left: 20%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
@@ -107,11 +106,12 @@ ul {
 }
 
 #game {
-    margin-left: 60%;
+    margin-left: 70%;
+    margin-top: 50px;
 }
 
 #roll {
-    margin-left: 50%;
+    margin-left: 70%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
@@ -120,4 +120,5 @@ ul {
     font-size: 25px;
     background-color: rgb(39, 210, 225);
 }
+
 

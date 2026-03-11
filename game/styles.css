@@ -71,7 +71,12 @@ ul {
     margin-left: 68%;
 }
 
-#dice {
+#dice1 {
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+#dice2 {
     margin-left: 10%;
     margin-top: 30px;
 }
