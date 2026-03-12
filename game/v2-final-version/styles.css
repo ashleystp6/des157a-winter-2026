@@ -3,7 +3,7 @@ body {
     background: url(images/water.jpg);
 }
 
-main {
+body {
    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -20,16 +20,15 @@ h1 {
 }
 
 #rules {
-    margin-left: 50px;
-    line-height: 1.5em;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 2em;
     background-color: rgba(255, 255, 255, 0.535);
     border-radius: 10px;
     padding: 25px;
 }
 
-#rules img {
-    margin-left: 30px;
-    margin-top: 20px;
+#ship {
     position: absolute;
     animation: slide 2s linear infinite alternate;
 }
@@ -43,75 +42,29 @@ h1 {
   }
 }
 
-ul {
-   list-style-type: none;
-}
-
-#button {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 10px;
-    font-size: 25px;
-    background-color: rgb(39, 210, 225);
-}
-
-#score {
-    display: flex;
-    gap: 80px;
-    margin-left: 68%;
-}
-
-#names {
-    display: flex;
-    gap: 80px;
-    margin-left: 68%;
-}
-
-#dice1 {
-    margin-left: 10%;
-    margin-top: 30px;
-    max-height: 250px;
-    max-width: 250px;
-}
-
-#dice1 img {
-    margin: 10px;
-}
-
-#dice2 {
-    margin-left: 10%;
-    margin-top: 30px;
-    max-height: 250px;
-    max-width: 250px;
-}
-
-#dice2 img {
-    margin: 10px;
-}
-
-#top {
-    display: flex;
-}
-
 #game img {
     width: 150px;
     margin: 10px;
 }
 
 #gamecontrol {
-    margin-left: 75%;
-    
+    margin-left: 20%;
+}
+
+#actions {
+    margin-left: 20%;
+}
+
+#score {
+    margin-left: 20%;
 }
 
 #game {
-    margin-left: 70%;
-    margin-top: 50px;
+    margin-left: 20%;
 }
 
-#roll {
-    margin-left: 70%;
+#startgame {
+    margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
@@ -119,6 +72,97 @@ ul {
     border-radius: 10px;
     font-size: 25px;
     background-color: rgb(39, 210, 225);
+    font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
+#roll {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: rgb(39, 210, 225);
+    font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+#quit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(254, 126, 173);
+    font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#rollagain {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: rgb(39, 210, 225);
+    font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#pass {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: rgb(39, 210, 225);
+    font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#audio {
+    width: 75px;
+    height: 75px;
+}
+
+#audiocontrol {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    flex: 1;
+}
+
+section:last-of-type {
+    display: grid;
+    place-content: center;
+}
+
+#left {
+    margin-left: 155px;
+}
+
+footer {
+    margin-left: 50%;
+    margin-top: 330px;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: black;
+}
